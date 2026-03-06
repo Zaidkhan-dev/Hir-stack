@@ -12,7 +12,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'py-4 glass-card' : 'py-6 bg-transparent'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <img src="/components/logo-hirstack.png" alt="HirStack Logo" className="h-16 w-auto" />
+          <img src="/logo-hirstack.png" alt="HirStack Logo" className="h-16 w-auto" />
         </div>
 
         {/* Desktop Menu */}
