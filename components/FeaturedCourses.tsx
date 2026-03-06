@@ -6,28 +6,28 @@ const courses = [
     title: "Full Stack Development",
     level: "All Levels",
     duration: "6 Months",
-    image: "/fullstack.jpeg",
+    image: "/Hir-stack/fullstack.jpeg",
     price: "$2,499"
   },
   {
     title: "AI & Machine Learning",
     level: "Intermediate",
     duration: "8 Months",
-    image: "/ai.jpeg",
+    image: "/Hir-stack/ai.jpeg",
     price: "$3,200"
   },
   {
     title: "Cloud Engineering",
     level: "Advanced",
     duration: "4 Months",
-    image: "/cloud.jpeg",
+    image: "/Hir-stack/cloud.jpeg",
     price: "$2,100"
   },
   {
     title: "Cybersecurity Specialist",
     level: "Beginner",
     duration: "5 Months",
-    image: "/security.jpeg",
+    image: "/Hir-stack/security.jpeg",
     price: "$2,800"
   }
 ];
