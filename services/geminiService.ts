@@ -2,10 +2,16 @@
 import { GoogleGenAI } from "@google/genai";
 
 export class GeminiService {
-  private ai: GoogleGenAI;
+  private ai: GoogleGenAI | null;
 
   constructor() {
-    this.ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+    if (apiKey) {
+      this.ai = new GoogleGenAI({ apiKey });
+    } else {
+      this.ai = null;
+      console.warn('VITE_GEMINI_API_KEY not set. Career advisor will show preset responses.');
+    }
   }
 
   async getCareerAdvice(userInterests: string) {
@@ -20,6 +26,10 @@ export class GeminiService {
     5. Mobile App Development (Flutter, React Native)
     
     Provide a concise, encouraging response (max 150 words) that explains WHY that path fits them and what the first step is. Use professional yet approachable tone.`;
+
+    if (!this.ai) {
+      return "Career advisor is temporarily unavailable. Please contact our team directly at support@hirstack.com for personalized guidance.";
+    }
 
     try {
       const response = await this.ai.models.generateContent({

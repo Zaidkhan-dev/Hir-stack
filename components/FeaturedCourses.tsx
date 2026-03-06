@@ -6,28 +6,28 @@ const courses = [
     title: "Full Stack Development",
     level: "All Levels",
     duration: "6 Months",
-    image: "https://picsum.photos/seed/web/600/400",
+    image: "/components/fullstack.jpeg",
     price: "$2,499"
   },
   {
     title: "AI & Machine Learning",
     level: "Intermediate",
     duration: "8 Months",
-    image: "https://picsum.photos/seed/ai/600/400",
+    image: "/components/ai.jpeg",
     price: "$3,200"
   },
   {
     title: "Cloud Engineering",
     level: "Advanced",
     duration: "4 Months",
-    image: "https://picsum.photos/seed/cloud/600/400",
+    image: "/components/cloud.jpeg",
     price: "$2,100"
   },
   {
     title: "Cybersecurity Specialist",
     level: "Beginner",
     duration: "5 Months",
-    image: "https://picsum.photos/seed/sec/600/400",
+    image: "/components/security.jpeg",
     price: "$2,800"
   }
 ];

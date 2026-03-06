@@ -27,7 +27,7 @@ export const About: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2 relative">
             <img 
-              src="https://picsum.photos/seed/tech/800/600" 
+              src="/components/phillo.jpeg" 
               alt="Learning Environment" 
               className="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
             />
