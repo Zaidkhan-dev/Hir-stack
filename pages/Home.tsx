@@ -4,7 +4,6 @@ import { About } from '../components/About';
 import { CourseModes } from '../components/CourseModes';
 import { FeaturedCourses } from '../components/FeaturedCourses';
 import { Subscription } from '../components/Subscription';
-import { Testimonials } from '../components/Testimonials';
 
 export const Home: React.FC = () => {
   return (
@@ -14,7 +13,6 @@ export const Home: React.FC = () => {
       <CourseModes />
       <FeaturedCourses />
       <Subscription />
-      <Testimonials />
     </main>
   );
 };
